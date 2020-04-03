@@ -16,7 +16,6 @@ class CreateFiatsTable extends Migration
         Schema::create('fiats', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('mobile');
             $table->string('symbol');
             $table->string('image');
         });
