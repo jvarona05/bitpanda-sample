@@ -13,4 +13,12 @@ class FiatWallet extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Get user.
+     */
+    public function fiat()
+    {
+        return $this->belongsTo(Fiat::class);
+    }
 }
