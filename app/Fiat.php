@@ -13,4 +13,12 @@ class Fiat extends Model
     {
         return $this->hasMany(FiatWallet::class);
     }
+
+    /**
+     * Get fiat provider details.
+     */
+    public function providerDetails()
+    {
+        return $this->hasMany(FiatProviderDetail::class);
+    }
 }
