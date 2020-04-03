@@ -2,6 +2,12 @@
 
 class UserSeeder extends SeederBase
 {
+    private $bitPandaUser = [
+        'name' => 'BitPanda',
+        'email' => 'admin@bitpanda.com',
+        'verified' => true
+    ];
+    
     /**
      * Run the database seeds.
      *
@@ -10,12 +16,9 @@ class UserSeeder extends SeederBase
     public function run()
     {
         // BitPanda user
-        factory(App\User::class)->create([
-            'name' => 'BitPanda',
-            'email' => 'admin@bitpanda.com',
-            'verified' => true
-        ]);
+        factory(App\User::class)->create($this->bitPandaUser);
 
+        // Normal users
         factory(App\User::class, 50)->create();
     }
 }
