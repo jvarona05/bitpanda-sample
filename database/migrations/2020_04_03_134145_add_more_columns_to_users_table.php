@@ -14,9 +14,9 @@ class AddMoreColumnsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('verified');
+            $table->boolean('verified')->default(false);
             $table->string('mobile');
-            $table->boolean('mobile_verified');
+            $table->boolean('mobile_verified')->default(false);
             $table->date('birthday');
             $table->string('street');
             $table->string('zipcode');
