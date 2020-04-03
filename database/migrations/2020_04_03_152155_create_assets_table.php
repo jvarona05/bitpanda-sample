@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFiatWalletTransactionsTable extends Migration
+class CreateAssetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateFiatWalletTransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fiat_wallet_transactions', function (Blueprint $table) {
+        Schema::create('assets', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('fiat_wallet_id')->constrained();
-            $table->enum('actions', ['buy', 'sell', 'deposit', 'withdrawal']);
-            $table->timestamps();
+            $table->string('symbol', 6);
+            $table->string('name');
+            $table->enum('type', ['cryptocoin', 'metal']);
+            $table->string('image');
         });
     }
 
@@ -28,6 +29,6 @@ class CreateFiatWalletTransactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fiat_wallet_transactions');
+        Schema::dropIfExists('assets');
     }
 }
