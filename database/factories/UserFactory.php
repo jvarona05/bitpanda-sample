@@ -24,5 +24,13 @@ $factory->define(User::class, function (Faker $faker) {
         'email_verified_at' => now(),
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         'remember_token' => Str::random(10),
+        'verified' => $faker->boolean,
+        'mobile' => $faker->phoneNumber,
+        'mobile_verified' => $faker->boolean,
+        'birthday' => $faker->date,
+        'street' => $faker->address,
+        'zipcode' => rand(10000, 99999),
+        'iso' => 'ES',
+        'country_id' => 1
     ];
 });

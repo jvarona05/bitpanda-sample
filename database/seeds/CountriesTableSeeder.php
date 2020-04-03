@@ -1,6 +1,5 @@
 <?php
 
-
 class CountriesTableSeeder extends SeederBase
 {
     /**

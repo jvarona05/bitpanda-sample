@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
-
 class UserSeeder extends SeederBase
 {
     /**
@@ -12,18 +9,13 @@ class UserSeeder extends SeederBase
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
-            'password' => Hash::make('password'),
-            'verified' => false,
-            'mobile' => '34-685-42-57-29',
-            'mobile_verified' => false,
-            'birthday' => '1993-11-16',
-            'street' => 'street 445',
-            'zipcode' => '28019',
-            'iso' => 'ES',
-            'country_id' => 64
+        // BitPanda user
+        factory(App\User::class)->create([
+            'name' => 'BitPanda',
+            'email' => 'admin@bitpanda.com',
+            'verified' => true
         ]);
+
+        factory(App\User::class, 50)->create();
     }
 }
