@@ -13,4 +13,12 @@ class Wallet extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Get asset.
+     */
+    public function asset()
+    {
+        return $this->belongsTo(Asset::class);
+    }
 }
