@@ -17,7 +17,8 @@ class CreateWalletTransactionsTable extends Migration
             $table->id();
             $table->integer('wallet_id');
             $table->string("wallet_type");
-            $table->enum('actions', ['buy', 'sell', 'deposit', 'withdrawal']);
+            $table->enum('action', ['buy', 'sell', 'deposit', 'withdrawal']);
+            $table->decimal('amount', 16, 2);
             $table->timestamps();
         });
     }
