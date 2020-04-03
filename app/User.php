@@ -46,6 +46,14 @@ class User extends Authenticatable
     }
 
     /**
+     * Get user fiat wallets.
+     */
+    public function fiatWallets()
+    {
+        return $this->hasMany(FiatWallet::class);
+    }
+
+    /**
      * Get country.
      */
     public function country()
