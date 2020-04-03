@@ -13,4 +13,12 @@ class Asset extends Model
     {
         return $this->hasMany(Wallet::class);
     }
+
+    /**
+     * Get prices history.
+     */
+    public function prices()
+    {
+        return $this->hasMany(AssetPrice::class);
+    }
 }
