@@ -44,4 +44,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(Wallet::class);
     }
+
+    /**
+     * Get country.
+     */
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
 }
