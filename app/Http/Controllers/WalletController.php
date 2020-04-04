@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\UserWalletResource;
+use App\Http\Resources\WalletResource;
 use App\Repository\WalletRepository;
 use App\Wallet;
 
@@ -20,7 +21,7 @@ class WalletController extends Controller
 
         return new UserWalletResource([
             'wallets' => WalletRepository::getUserCryptocoinWallets($user), 
-            'commodity_wallets' => WalletRepository::getUserCryptocoinWallets($user),
+            'commodity_wallets' => WalletRepository::getUserMetalWallets($user),
             'fiat_wallets' => WalletRepository::getUserFiatWallets($user)
         ]);
     }
@@ -44,7 +45,7 @@ class WalletController extends Controller
      */
     public function show($id)
     {
-        return Wallet::find($id);
+        return new WalletResource(Wallet::find($id));
     }
 
     /**
