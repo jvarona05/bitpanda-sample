@@ -18,8 +18,8 @@ class UserWalletResource extends JsonResource
             'type' => 'collection',
             'attributes' => [
                 'wallets' => WalletResource::collection($this->resource['wallets']),
-                'commodity_wallets' => WalletResource::collection($this->resource['commodityWallets']),
-                'fiat_wallets' => FiatWalletResource::collection($this->resource['fiatWallets']),
+                'commodity_wallets' => WalletResource::collection($this->resource['commodity_wallets']),
+                'fiat_wallets' => FiatWalletResource::collection($this->resource['fiat_wallets']),
             ]
         ];
     }
