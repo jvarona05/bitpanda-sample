@@ -31,4 +31,26 @@ class Wallet extends Model
     {
         return $this->morphMany(WalletTransaction::class, 'wallet');
     }
+
+    /**
+     * Scope a query to only include popular users.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeCryptocoinWallets($query)
+    {
+        return $query->where('assets.type', '=', 'cryptocoin')->join('assets', 'wallets.asset_id', '=', 'assets.id');
+    }
+
+    /**
+     * Scope a query to only include popular users.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeMetalWallets($query)
+    {
+        return $query->where('assets.type', '=', 'metal')->join('assets', 'wallets.asset_id', '=', 'assets.id');
+    }
 }

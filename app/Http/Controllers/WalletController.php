@@ -13,7 +13,13 @@ class WalletController extends Controller
      */
     public function index()
     {
-        //
+        $user = auth()->user();
+
+        return [
+            'wallets' => $user->wallets()->cryptocoinWallets()->get(),
+            'commodity_wallets' => $user->wallets()->metalWallets()->get(),
+            'fiat_wallets' => $user->fiatWallets
+        ];
     }
 
     /**
