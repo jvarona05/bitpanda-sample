@@ -1,0 +1,445 @@
+[
+    {
+        "values": {
+            "name": "BTC Wallet",
+            "asset_id": 1,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            },
+            {
+                "action": "deposit",
+                "amount": 3
+            },
+            {
+                "action": "withdrawal",
+                "amount": 4
+            },
+            {
+                "action": "deposit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "LTC Wallet",
+            "asset_id": 2,
+            "balance": 3,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "ETH Wallet",
+            "asset_id": 3,
+            "balance": 5,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "LSK Wallet",
+            "asset_id": 4,
+            "balance": 3,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "DASH Wallet",
+            "asset_id": 5,
+            "balance": 5,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "XRP Wallet",
+            "asset_id": 6,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            },
+            {
+                "action": "deposit",
+                "amount": 3
+            },
+            {
+                "action": "withdrawal",
+                "amount": 4
+            },
+            {
+                "action": "deposit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "BCH Wallet",
+            "asset_id": 7,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "PAN Wallet",
+            "asset_id": 8,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "KMD Wallet",
+            "asset_id": 9,
+            "balance": 5,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "MIOTA Wallet",
+            "asset_id": 10,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "EOS Wallet",
+            "asset_id": 11,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            },
+            {
+                "action": "deposit",
+                "amount": 3
+            },
+            {
+                "action": "withdrawal",
+                "amount": 4
+            },
+            {
+                "action": "deposit",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "OMG Wallet",
+            "asset_id": 12,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "REP Wallet",
+            "asset_id": 13,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "ZRX Wallet",
+            "asset_id": 14,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "ZEC Wallet",
+            "asset_id": 15,
+            "balance": 5,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "XEM Wallet",
+            "asset_id": 16,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "XLM Wallet",
+            "asset_id": 17,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "XTZ Wallet",
+            "asset_id": 18,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "ADA Wallet",
+            "asset_id": 19,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "NEO Wallet",
+            "asset_id": 20,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "ETC Wallet",
+            "asset_id": 21,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "LINK Wallet",
+            "asset_id": 22,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "WAVES Wallet",
+            "asset_id": 23,
+            "balance": 5,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "USDT Wallet",
+            "asset_id": 24,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "USDC Wallet",
+            "asset_id": 25,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "TRX Wallet",
+            "asset_id": 26,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "ATOM Wallet",
+            "asset_id": 27,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "BEST Wallet",
+            "asset_id": 28,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "BAT Wallet",
+            "asset_id": 29,
+            "balance": 4,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "CHZ Wallet",
+            "asset_id": 30,
+            "balance": 3,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "Gold Wallet",
+            "asset_id": 31,
+            "balance": 3,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "Silver Wallet",
+            "asset_id": 32,
+            "balance": 8,
+            "pending_transactions_count": false
+        },
+        "transactions": [
+            {
+                "action": "buy",
+                "amount": 5
+            },
+            {
+                "action": "sell",
+                "amount": 2
+            },
+            {
+                "action": "deposit",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "values": {
+            "name": "Palladium Wallet",
+            "asset_id": 32,
+            "balance": 0,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "name": "Platinum Wallet",
+            "asset_id": 34,
+            "balance": 0,
+            "pending_transactions_count": false
+        },
+        "transactions": []
+    }
+]
