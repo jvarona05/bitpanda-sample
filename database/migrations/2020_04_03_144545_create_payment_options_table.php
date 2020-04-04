@@ -19,7 +19,6 @@ class CreatePaymentOptionsTable extends Migration
             $table->string('name');
             $table->longText('description');
             $table->longText('terms');
-            $table->decimal('amount', 8, 2);
             $table->boolean('unavailable')->default(false);
             $table->boolean('is_voucher')->default(false);
             $table->boolean('is_instant')->default(false);

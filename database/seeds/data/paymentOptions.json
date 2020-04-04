@@ -1,0 +1,211 @@
+[
+   {
+      "short_name":"sofort",
+      "name":"Sofort",
+      "description":"Online bank transfer for users from Europe. The payment is processed immediately.",
+      "terms":"I hereby confirm that the bank account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"visa",
+      "name":"Visa",
+      "description":"3D-secure credit card payment. The payment is processed immediately.",
+      "terms":"I hereby confirm that the credit card account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":true
+   },
+   {
+      "short_name":"mastercard",
+      "name":"Mastercard",
+      "description":"3D-secure credit card payment. The payment is processed immediately.",
+      "terms":"I hereby confirm that the credit card account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":true
+   },
+   {
+      "short_name":"sepa",
+      "name":"Bank Transfer",
+      "description":"Regular bank transfer for customers from the European Union. Please note that the transfer can take between 2-3 business days.",
+      "terms":"I hereby confirm that the bank account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":true,
+      "savings_enabled":true
+   },
+   {
+      "short_name":"eps",
+      "name":"eps",
+      "description":"Online bank transfer for customers in Europe with an Austrian bank account. The payment is processed immediately.",
+      "terms":"I hereby confirm that the bank account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"giropay",
+      "name":"Giropay",
+      "description":"Online bank transfer for customers in Europe with a German bank account. The payment is processed immediately.",
+      "terms":"I hereby confirm that the bank account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"neteller",
+      "name":"Neteller",
+      "description":"Neteller online payment provider. The payment is processed immediately.",
+      "terms":"I hereby confirm that the Neteller account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"skrill",
+      "name":"Skrill",
+      "description":"Skrill online payment provider. The payment is processed immediately.",
+      "terms":"I hereby confirm that the Skrill account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"fiatwallet",
+      "name":"Fiatwallet",
+      "description":"Fiat wallet description",
+      "terms":"Fiat wallet terms",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"bitpandatogo",
+      "name":"Bitpanda To Go Voucher",
+      "description":"Select this option to redeem your Bitpanda To Go Voucher.",
+      "terms":"I hereby confirm that the Bitpanda To Go Voucher is in my personal possession.",
+      "unavailable":false,
+      "is_voucher":true,
+      "is_instant":false,
+      "enabled":true,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"wirecard",
+      "name":"Wirecard",
+      "description":"Wirecard Description",
+      "terms":"Wirecard Terms",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"obt",
+      "name":"payment.option.name.obt",
+      "description":"payment.option.description.obt",
+      "terms":"payment.option.terms.obt",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"rapidtransfer",
+      "name":"Rapid Transfer",
+      "description":"Coming Soon",
+      "terms":"I hereby confirm that the Rapid Transfer account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"okpay",
+      "name":"payment.option.name.okpay",
+      "description":"payment.option.description.okpay",
+      "terms":"payment.option.terms.okpay",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"cash_deposit",
+      "name":"payment.option.name.cash_deposit",
+      "description":"payment.option.description.cash_deposit",
+      "terms":"payment.option.terms.cash_deposit",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"redeem_voucher",
+      "name":"Bitpanda",
+      "description":"Select this option to redeem your voucher.",
+      "terms":"I hereby confirm that the voucher is in my personal possession.",
+      "unavailable":false,
+      "is_voucher":true,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"refund",
+      "name":"payment.option.name.refund",
+      "description":"payment.option.description.refund",
+      "terms":"payment.option.terms.refund",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"zimpler",
+      "name":"Zimpler",
+      "description":"Instant bank and card payments optimised for mobile.",
+      "terms":"I hereby confirm that I will use the same mobile number for this payment as in my Bitpanda account.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   },
+   {
+      "short_name":"ideal",
+      "name":"iDEAL",
+      "description":"Online bank transfer for users with a bank account in the Netherlands. The payment is processed immediately.",
+      "terms":"I hereby confirm that the bank account is in my name.",
+      "unavailable":false,
+      "is_voucher":false,
+      "is_instant":false,
+      "enabled":false,
+      "savings_enabled":false
+   }
+]
