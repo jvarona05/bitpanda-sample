@@ -16,10 +16,10 @@ class CreateAssetPricesTable extends Migration
         Schema::create('asset_prices', function (Blueprint $table) {
             $table->id();
             $table->foreignId('asset_id')->constrained();
-            $table->decimal('price_open', 8, 2);
-            $table->decimal('price_high', 8, 2);
-            $table->decimal('price_close', 8, 2);
-            $table->decimal('price_low', 8, 2);
+            $table->decimal('open_price', 8, 2);
+            $table->decimal('high_price', 8, 2);
+            $table->decimal('close_price', 8, 2);
+            $table->decimal('low_price', 8, 2);
             $table->timestamps();
         });
     }

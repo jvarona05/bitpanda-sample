@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(FiatSeeder::class);
         $this->call(PaymentOptionSeeder::class);
         $this->call(FiatProviderDetailSeeder::class);
+        $this->call(AssetSeeder::class);
     }
 }
