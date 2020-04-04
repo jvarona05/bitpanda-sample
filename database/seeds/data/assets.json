@@ -1,0 +1,206 @@
+[
+    {
+       "symbol":"BTC",
+       "name":"BTC Wallet",
+       "type":"cryptocoin",
+       "image":"image\/btc.png"
+    },
+    {
+       "symbol":"LTC",
+       "name":"LTC Wallet",
+       "type":"cryptocoin",
+       "image":"image\/ltc.png"
+    },
+    {
+       "symbol":"ETH",
+       "name":"ETH Wallet",
+       "type":"cryptocoin",
+       "image":"image\/eth.png"
+    },
+    {
+       "symbol":"LSK",
+       "name":"LSK Wallet",
+       "type":"cryptocoin",
+       "image":"image\/lsk.png"
+    },
+    {
+       "symbol":"DASH",
+       "name":"DASH Wallet",
+       "type":"cryptocoin",
+       "image":"image\/dash.png"
+    },
+    {
+       "symbol":"XRP",
+       "name":"XRP Wallet",
+       "type":"cryptocoin",
+       "image":"image\/xrp.png"
+    },
+    {
+       "symbol":"BCH",
+       "name":"BCH Wallet",
+       "type":"cryptocoin",
+       "image":"image\/bch.png"
+    },
+    {
+       "symbol":"PAN",
+       "name":"PAN Wallet",
+       "type":"cryptocoin",
+       "image":"image\/pan.png"
+    },
+    {
+       "symbol":"KMD",
+       "name":"KMD Wallet",
+       "type":"cryptocoin",
+       "image":"image\/kmd.png"
+    },
+    {
+       "symbol":"MIOTA",
+       "name":"MIOTA Wallet",
+       "type":"cryptocoin",
+       "image":"image\/miota.png"
+    },
+    {
+       "symbol":"EOS",
+       "name":"EOS Wallet",
+       "type":"cryptocoin",
+       "image":"image\/eos.png"
+    },
+    {
+       "symbol":"OMG",
+       "name":"OMG Wallet",
+       "type":"cryptocoin",
+       "image":"image\/omg.png"
+    },
+    {
+       "symbol":"REP",
+       "name":"REP Wallet",
+       "type":"cryptocoin",
+       "image":"image\/rep.png"
+    },
+    {
+       "symbol":"ZRX",
+       "name":"ZRX Wallet",
+       "type":"cryptocoin",
+       "image":"image\/zrx.png"
+    },
+    {
+       "symbol":"ZEC",
+       "name":"ZEC Wallet",
+       "type":"cryptocoin",
+       "image":"image\/zec.png"
+    },
+    {
+       "symbol":"XEM",
+       "name":"XEM Wallet",
+       "type":"cryptocoin",
+       "image":"image\/xem.png"
+    },
+    {
+       "symbol":"XLM",
+       "name":"XLM Wallet",
+       "type":"cryptocoin",
+       "image":"image\/xlm.png"
+    },
+    {
+       "symbol":"XTZ",
+       "name":"XTZ Wallet",
+       "type":"cryptocoin",
+       "image":"image\/xtz.png"
+    },
+    {
+       "symbol":"ADA",
+       "name":"ADA Wallet",
+       "type":"cryptocoin",
+       "image":"image\/ada.png"
+    },
+    {
+       "symbol":"NEO",
+       "name":"NEO Wallet",
+       "type":"cryptocoin",
+       "image":"image\/neo.png"
+    },
+    {
+       "symbol":"ETC",
+       "name":"ETC Wallet",
+       "type":"cryptocoin",
+       "image":"image\/etc.png"
+    },
+    {
+       "symbol":"LINK",
+       "name":"LINK Wallet",
+       "type":"cryptocoin",
+       "image":"image\/link.png"
+    },
+    {
+       "symbol":"WAVES",
+       "name":"WAVES Wallet",
+       "type":"cryptocoin",
+       "image":"image\/waves.png"
+    },
+    {
+       "symbol":"USDT",
+       "name":"USDT Wallet",
+       "type":"cryptocoin",
+       "image":"image\/usdt.png"
+    },
+    {
+       "symbol":"USDC",
+       "name":"USDC Wallet",
+       "type":"cryptocoin",
+       "image":"image\/usdc.png"
+    },
+    {
+       "symbol":"TRX",
+       "name":"TRX Wallet",
+       "type":"cryptocoin",
+       "image":"image\/trx.png"
+    },
+    {
+       "symbol":"ATOM",
+       "name":"ATOM Wallet",
+       "type":"cryptocoin",
+       "image":"image\/atom.png"
+    },
+    {
+       "symbol":"BEST",
+       "name":"BEST Wallet",
+       "type":"cryptocoin",
+       "image":"image\/best.png"
+    },
+    {
+       "symbol":"BAT",
+       "name":"BAT Wallet",
+       "type":"cryptocoin",
+       "image":"image\/bat.png"
+    },
+    {
+       "symbol":"CHZ",
+       "name":"CHZ Wallet",
+       "type":"cryptocoin",
+       "image":"image\/chz.png"
+    },
+    {
+       "symbol":"XAU",
+       "name":"Gold Wallet",
+       "type":"metal",
+       "image":"image\/xau.png"
+    },
+    {
+       "symbol":"XAG",
+       "name":"Silver Wallet",
+       "type":"metal",
+       "image":"image\/xag.png"
+    },
+    {
+       "symbol":"XPD",
+       "name":"Palladium Wallet",
+       "type":"metal",
+       "image":"image\/xpd.png"
+    },
+    {
+       "symbol":"XPT",
+       "name":"Platinum Wallet",
+       "type":"metal",
+       "image":"image\/xpt.png"
+    }
+ ]
