@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class FiatWallet extends Model
 {
+    public $timestamps = false;
+    
     /**
      * Get user.
      */

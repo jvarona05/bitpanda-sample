@@ -1,0 +1,39 @@
+[
+    {
+        "values": {
+            "fiat_id": 1,
+            "balance": 2500
+        },
+        "transactions": [
+            {
+                "action": "deposit",
+                "amount": 3000
+            },
+            {
+                "action": "withdrawal",
+                "amount": 500
+            }
+        ]
+    },
+    {
+        "values": {
+            "fiat_id": 2,
+            "balance": 0
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "fiat_id": 3,
+            "balance": 0
+        },
+        "transactions": []
+    },
+    {
+        "values": {
+            "fiat_id": 4,
+            "balance": 0
+        },
+        "transactions": []
+    }
+]

@@ -2,7 +2,7 @@
 
 use SeederUtils\Wallets;
 
-class WalletSeeder extends SeederBase
+class FiatWalletSeeder extends SeederBase
 {
     use Wallets;
 
@@ -13,8 +13,8 @@ class WalletSeeder extends SeederBase
      */
     public function run()
     {
-        $wallets = $this->loadData('wallets');
+        $wallets = $this->loadData('fiatWallets');
 
-        $this->initWalletsForAllUsers('wallets', $wallets);
+        $this->initWalletsForAllUsers('fiatWallets', $wallets);
     }
 }

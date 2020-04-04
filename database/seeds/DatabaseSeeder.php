@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(FiatProviderDetailSeeder::class);
         $this->call(AssetSeeder::class);
         $this->call(WalletSeeder::class);
+        $this->call(FiatWalletSeeder::class);
     }
 }
