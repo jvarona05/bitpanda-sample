@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Resources\UserWalletResource;
 use App\Wallet;
 
 class WalletController extends Controller
@@ -14,13 +15,15 @@ class WalletController extends Controller
      */
     public function index()
     {
-        $user = auth()->user();
+        $wallets = auth()->user()->wallets()->with(['asset'])->cryptocoinWallets()->get();
+        $commodityWallets = auth()->user()->wallets()->with(['asset'])->metalWallets()->get();
+        $fiatWallets = auth()->user()->fiatWallets()->with(['fiat'])->get();
 
-        return [
-            'wallets' => $user->wallets()->cryptocoinWallets()->get(),
-            'commodity_wallets' => $user->wallets()->metalWallets()->get(),
-            'fiat_wallets' => $user->fiatWallets
-        ];
+        return new UserWalletResource(compact(
+            'wallets',
+            'commodityWallets',
+            'fiatWallets'
+        ));
     }
 
     /**
