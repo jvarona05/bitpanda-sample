@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('v1')->group(function () {
     Route::prefix('wallets')->group(function () {
         Route::get('/', 'WalletController@index');
+        Route::get('{id}', 'WalletController@show');
     });
 });
