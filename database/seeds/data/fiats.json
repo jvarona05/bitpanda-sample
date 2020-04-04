@@ -1,0 +1,22 @@
+[
+    {
+        "name":"EUR Wallet",
+        "image": "image/gold.png",
+        "symbol": "EUR"
+    },
+    {
+        "name":"USD Wallet",
+        "image": "image/usd.png",
+        "symbol": "USD"
+    },
+    {
+        "name":"CHF Wallet",
+        "image": "image/chf.png",
+        "symbol": "CHF"
+    },
+    {
+        "name":"GBP Wallet",
+        "image": "image/gbp.png",
+        "symbol": "GBP"
+    }
+]
