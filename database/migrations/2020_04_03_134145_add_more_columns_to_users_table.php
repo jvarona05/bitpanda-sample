@@ -15,13 +15,13 @@ class AddMoreColumnsToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->boolean('verified')->default(false);
-            $table->string('mobile');
+            $table->string('mobile')->nullable();
             $table->boolean('mobile_verified')->default(false);
-            $table->date('birthday');
-            $table->string('street');
-            $table->string('zipcode');
-            $table->string('iso');
-            $table->foreignId('country_id')->constrained();
+            $table->date('birthday')->nullable();
+            $table->string('street')->nullable();
+            $table->string('zipcode')->nullable();
+            $table->string('iso')->nullable();
+            $table->foreignId('country_id')->nullable()->constrained();
         });
     }
 

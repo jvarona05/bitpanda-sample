@@ -19,6 +19,6 @@ class UserSeeder extends SeederBase
         factory(App\User::class)->create($this->bitPandaUser);
 
         // Normal users
-        factory(App\User::class, 50)->create();
+        factory(App\User::class, 5)->create();
     }
 }

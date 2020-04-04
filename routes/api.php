@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::get('wallets', 'WalletController@index');
-    Route::get('wallets/{id}', 'WalletController@show');
-    Route::get('wallets/{id}/transactions', 'WalletController@transactions');
+    Route::get('wallets', 'WalletController@index')->name('api.wallet.index');
+    
+    Route::get('wallets/{id}', 'WalletController@show')->name('api.wallet.show');
+    
+    Route::get('wallets/{id}/transactions', 'WalletController@transactions')
+        ->name('api.create.wallet.transaction');
 });
