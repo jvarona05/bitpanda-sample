@@ -7,9 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+# BitPanda Sample Code
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This is a RESTful API project developed with Laravel, Passport, Mysql and Docker. This project went through all software development steps; analysis, design, development, testing and documentation.
+
+This project was inspired by BitPanda. The main goal was to try simulating the basic functions and architecture of this interesting platform.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
