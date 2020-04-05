@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\ohlcResource;
-use App\Asset;
+use App\Repository\StatsRepository;
 
 class StatsController extends Controller
 {
@@ -15,8 +15,8 @@ class StatsController extends Controller
      */
     public function ohlc()
     {
-        $asset = Asset::with('prices')->get()->keyBy->symbol;
+        $data = StatsRepository::getOhlcFilteredByRangeDate('day');
 
-        return ohlcResource::collection($asset);
+        return ohlcResource::collection($data);
     }
 }

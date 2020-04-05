@@ -21,4 +21,12 @@ class Asset extends Model
     {
         return $this->hasMany(AssetPrice::class);
     }
+
+    /**
+     * Get prices history.
+     */
+    public function pricesThisMonth()
+    {
+        return $this->hasMany(AssetPrice::class);
+    }
 }
