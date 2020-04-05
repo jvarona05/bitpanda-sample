@@ -24,6 +24,10 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 - Eloquent - Eager Loading
 - Eloquent - One To Many (Polymorphic) relation
 
+## Database Schema
+
+<p align="center"><img src="https://i.imgur.com/Olhdq3X.png" width="400"></p>
+
 ## Installation
 
 ### Clone the project
