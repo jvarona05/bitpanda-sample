@@ -61,3 +61,11 @@ docker exec -ti laradock_workspace_1 php artisan migrate --seed
 
 docker exec -ti laradock_workspace_1 php artisan passport:install
 ```
+
+### Open the proyect
+
+```
+http://localhost/
+```
+ 
+ Then, generate the proyect key
