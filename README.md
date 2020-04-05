@@ -13,6 +13,24 @@ This is a RESTful API project developed with Laravel, Passport, Mysql and Docker
 
 This project was inspired by BitPanda. The main goal was to try simulating the basic functions and architecture of this interesting platform.
 
+## Main Technologies
+
+- Laravel
+- Mysql
+- Docker - Laradock
+- Oauth2 - Passport
+- Migrations
+- Seeders
+- Factory
+- Query Scopes
+- Carbon/Carbon
+- FeatureTest - PHPUnit
+- Eloquent - Resource
+- Eloquent - Eager Loading
+- Eloquent - One To Many (Polymorphic) relation
+
+
+
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
