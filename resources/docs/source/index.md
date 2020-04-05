@@ -25,7 +25,9 @@ Welcome to the generated API reference.
 
 
 <!-- START_9832cdc3b1891ddd9c28de2ba93ab1af -->
-## Display a listing of the resource.
+## Get user fiat wallets.
+
+Returns the fiat wallets of a user.
 
 > Example request:
 
@@ -74,11 +76,32 @@ print_r(json_decode((string) $body));
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "message": "Unauthenticated."
+    "data": [
+        {
+            "type": "fiat_wallet",
+            "attributes": {
+                "name": "EUR Wallet",
+                "balance": "2500.00",
+                "fiat_id": 1,
+                "symbol": "EUR"
+            },
+            "id": 1
+        },
+        {
+            "type": "fiat_wallet",
+            "attributes": {
+                "name": "USD Wallet",
+                "balance": "0.00",
+                "fiat_id": 2,
+                "symbol": "USD"
+            },
+            "id": 2
+        }
+    ]
 }
 ```
 
@@ -89,13 +112,15 @@ print_r(json_decode((string) $body));
 <!-- END_9832cdc3b1891ddd9c28de2ba93ab1af -->
 
 <!-- START_2ae2a7b779a7ecc201bb2fc8b982c504 -->
-## Display the specified resource.
+## Get fiat wallet.
+
+Returns the data of a single fiat wallet.
 
 > Example request:
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/v1/fiat-wallets/1" \
+    -G "http://localhost/api/v1/fiat-wallets/provident" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer {token}"
@@ -103,7 +128,7 @@ curl -X GET \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/v1/fiat-wallets/1"
+    "http://localhost/api/v1/fiat-wallets/provident"
 );
 
 let headers = {
@@ -124,7 +149,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/v1/fiat-wallets/1',
+    'http://localhost/api/v1/fiat-wallets/provident',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -138,28 +163,44 @@ print_r(json_decode((string) $body));
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "message": "Unauthenticated."
+    "data": {
+        "type": "fiat_wallet",
+        "attributes": {
+            "name": "EUR Wallet",
+            "balance": "2500.00",
+            "fiat_id": 1,
+            "symbol": "EUR"
+        },
+        "id": 1
+    }
 }
 ```
 
 ### HTTP Request
 `GET api/v1/fiat-wallets/{id}`
 
+#### URL Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -------
+    `id` |  required  | The ID of the fiat wallet.
 
 <!-- END_2ae2a7b779a7ecc201bb2fc8b982c504 -->
 
 <!-- START_cb3a25104ed5af1b296ce2f6684e37a1 -->
-## Display the specified resource.
+## Get fiat wallet transactions.
+
+Returns all transactions of a fiat wallet.
 
 > Example request:
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/v1/fiat-wallets/1/transactions" \
+    -G "http://localhost/api/v1/fiat-wallets/veritatis/transactions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer {token}"
@@ -167,7 +208,7 @@ curl -X GET \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/v1/fiat-wallets/1/transactions"
+    "http://localhost/api/v1/fiat-wallets/veritatis/transactions"
 );
 
 let headers = {
@@ -188,7 +229,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/v1/fiat-wallets/1/transactions',
+    'http://localhost/api/v1/fiat-wallets/veritatis/transactions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -202,17 +243,41 @@ print_r(json_decode((string) $body));
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "message": "Unauthenticated."
+    "data": [
+        {
+            "type": "wallet_transaction",
+            "attributes": {
+                "action": "deposit",
+                "amount": "3000.00",
+                "date": "Sun Apr 05 2020 05:20:35 GMT+0000"
+            },
+            "id": 187
+        },
+        {
+            "type": "wallet_transaction",
+            "attributes": {
+                "action": "withdrawal",
+                "amount": "500.00",
+                "date": "Sun Apr 05 2020 05:20:35 GMT+0000"
+            },
+            "id": 188
+        }
+    ]
 }
 ```
 
 ### HTTP Request
 `GET api/v1/fiat-wallets/{id}/transactions`
 
+#### URL Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -------
+    `id` |  required  | The ID of the wallet.
 
 <!-- END_cb3a25104ed5af1b296ce2f6684e37a1 -->
 
@@ -220,7 +285,10 @@ print_r(json_decode((string) $body));
 
 
 <!-- START_d1857b5ec87054d1e1c4456345f37a06 -->
-## api/v1/paymentoptions
+## Get payment options
+
+Returns the payment options and the fiat provider details.
+
 > Example request:
 
 ```bash
@@ -268,11 +336,53 @@ print_r(json_decode((string) $body));
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "message": "Unauthenticated."
+    "data": [
+        {
+            "type": "payment_option",
+            "attributes": {
+                "short_name": "sofort",
+                "name": "Sofort",
+                "description": "Online bank transfer for users from Europe. The payment is processed immediately.",
+                "terms": "I hereby confirm that the bank account is in my name.",
+                "fiat_provider_details": [
+                    {
+                        "type": "fiat_provider_detail",
+                        "attributes": {
+                            "fee_fix": "0.00",
+                            "fee_percent": "1.99",
+                            "fee_max": "0.00",
+                            "fiat_id": 1,
+                            "vip_fee_percent_difference": "0.000",
+                            "savings_enabled": 0
+                        },
+                        "id": 1
+                    },
+                    {
+                        "type": "fiat_provider_detail",
+                        "attributes": {
+                            "fee_fix": "0.00",
+                            "fee_percent": "1.99",
+                            "fee_max": "0.00",
+                            "fiat_id": 3,
+                            "vip_fee_percent_difference": "0.000",
+                            "savings_enabled": 0
+                        },
+                        "id": 2
+                    }
+                ],
+                "unavailable": 0,
+                "is_voucher": 0,
+                "is_instant": 0,
+                "enabled": 0,
+                "savings_enabled": 0
+            },
+            "id": 1
+        }
+    ]
 }
 ```
 
@@ -286,13 +396,15 @@ print_r(json_decode((string) $body));
 
 
 <!-- START_0b8950e04388ffc2b10b969f5ddb9046 -->
-## Display a listing of the resource.
+## Get Open-High-Low-Close data.
+
+Returns the ohlc data grouped by assets.
 
 > Example request:
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/v1/ohlc/1" \
+    -G "http://localhost/api/v1/ohlc/pariatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer {token}"
@@ -300,7 +412,7 @@ curl -X GET \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/v1/ohlc/1"
+    "http://localhost/api/v1/ohlc/pariatur"
 );
 
 let headers = {
@@ -321,7 +433,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/v1/ohlc/1',
+    'http://localhost/api/v1/ohlc/pariatur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -335,17 +447,71 @@ print_r(json_decode((string) $body));
 ```
 
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": ""
+    "data": {
+        "BTC": [
+            {
+                "type": "candle",
+                "attributes": {
+                    "open": "8000.90",
+                    "high": "8149.50",
+                    "close": "8139.00",
+                    "low": "7995.00",
+                    "time": "Thu Mar 05 2020 05:00:00 GMT+0000"
+                },
+                "id": 6
+            },
+            {
+                "type": "candle",
+                "attributes": {
+                    "open": "8140.00",
+                    "high": "8173.10",
+                    "close": "8131.90",
+                    "low": "8083.60",
+                    "time": "Thu Mar 05 2020 11:00:00 GMT+0000"
+                },
+                "id": 7
+            }
+        ],
+        "LTC": [
+            {
+                "type": "candle",
+                "attributes": {
+                    "open": "54.66",
+                    "high": "56.34",
+                    "close": "56.34",
+                    "low": "54.62",
+                    "time": "Thu Mar 05 2020 05:00:00 GMT+0000"
+                },
+                "id": 1392
+            },
+            {
+                "type": "candle",
+                "attributes": {
+                    "open": "56.39",
+                    "high": "56.74",
+                    "close": "56.10",
+                    "low": "55.47",
+                    "time": "Thu Mar 05 2020 11:00:00 GMT+0000"
+                },
+                "id": 1393
+            }
+        ]
+    }
 }
 ```
 
 ### HTTP Request
 `GET api/v1/ohlc/{dateRange}`
 
+#### URL Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -------
+    `dateRange` |  required  | The value can be can be [day, month or day].
 
 <!-- END_0b8950e04388ffc2b10b969f5ddb9046 -->
 
@@ -501,7 +667,7 @@ Returns the data of a single wallet.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/v1/wallets/aut" \
+    -G "http://localhost/api/v1/wallets/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer {token}"
@@ -509,7 +675,7 @@ curl -X GET \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/v1/wallets/aut"
+    "http://localhost/api/v1/wallets/quia"
 );
 
 let headers = {
@@ -530,7 +696,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/v1/wallets/aut',
+    'http://localhost/api/v1/wallets/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -582,7 +748,7 @@ Returns all wallet's transactions.
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/v1/wallets/aliquam/transactions" \
+    -G "http://localhost/api/v1/wallets/doloribus/transactions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer {token}"
@@ -590,7 +756,7 @@ curl -X GET \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/v1/wallets/aliquam/transactions"
+    "http://localhost/api/v1/wallets/doloribus/transactions"
 );
 
 let headers = {
@@ -611,7 +777,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://localhost/api/v1/wallets/aliquam/transactions',
+    'http://localhost/api/v1/wallets/doloribus/transactions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
