@@ -18,7 +18,7 @@ class CreateWalletsTable extends Migration
             $table->string('name');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('asset_id')->constrained();
-            $table->decimal('balance', 16, 8);
+            $table->decimal('balance', 16, 2);
             $table->boolean('pending_transactions_count')->default(false);
             $table->softDeletes('deleted_at', 0);
         });

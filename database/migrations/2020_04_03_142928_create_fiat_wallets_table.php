@@ -17,7 +17,7 @@ class CreateFiatWalletsTable extends Migration
             $table->id();
             $table->foreignId('fiat_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->decimal('balance', 16, 8);
+            $table->decimal('balance', 16, 2);
         });
     }
 
