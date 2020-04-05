@@ -15,7 +15,7 @@ class PaymentTest extends ApiTestCase
      */
     public function a_user_can_get_the_payment_options()
     {                
-        $a = $this->getJson(route('api.payment_options'))
+        $this->getJson(route('api.payment_options'))
             ->assertStatus(200)
             ->assertJsonStructure(PaymentUtils::$paymentOptionsStructure);
     }
