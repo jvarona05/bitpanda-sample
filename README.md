@@ -62,6 +62,13 @@ docker exec -ti laradock_workspace_1 php artisan migrate --seed
 docker exec -ti laradock_workspace_1 php artisan passport:install
 ```
 
+Note: These keys are going to be used for authenticaicon
+```
+Password grant client created successfully.
+Client ID: 2
+Client secret: PBLVFz5Drgr7bgAnmLpSsW7VscEji56d3O08e9kv
+```
+
 ### Open the proyect
 
 ```
