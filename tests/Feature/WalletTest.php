@@ -13,11 +13,9 @@ use App\Wallet;
 class WalletTest extends ApiTestCase
 {
     /**
-     * A basic feature test example.
-     *
-     * @return void
+     * @test
      */
-    public function testCanUserGetTheirWallets()
+    public function a_user_can_get_their_wallets()
     {        
         $this->getJson(route('api.wallets'))
             ->assertStatus(200)
@@ -25,11 +23,9 @@ class WalletTest extends ApiTestCase
     }
 
     /**
-     * A basic feature test example.
-     *
-     * @return void
+     * @test
      */
-    public function testCanGetWallet()
+    public function a_user_can_get_a_single_wallet()
     {        
         $wallet = Wallet::first();
 
