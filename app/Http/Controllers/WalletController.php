@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Resources\WalletTransactionResource;
 use App\Http\Resources\UserWalletResource;
 use App\Http\Resources\WalletResource;
 use App\Repository\WalletRepository;
@@ -56,7 +57,9 @@ class WalletController extends Controller
      */
     public function transactions($id)
     {
-        return Wallet::find($id)->transactions;
+        $transactions = Wallet::find($id)->transactions;
+
+        return WalletTransactionResource::collection($transactions);
     }
 
     /**
