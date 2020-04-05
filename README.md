@@ -83,14 +83,4 @@ http://localhost/
 
  ### Get token
 
- ```
-curl --request POST \
-  --url http://localhost/oauth/token \
-  --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
-  --form grant_type=password \
-  --form client_id={{Client_ID}} \
-  --form client_secret={{Client_Secret}} \
-  --form username=admin@bitpanda.com \
-  --form password=password \
-  --form 'scope=*'
-```
+<p align="center"><img src="https://i.imgur.com/lW6faS9.png" width="400"></p>
