@@ -20,8 +20,7 @@ class FiatWalletResource extends JsonResource
                 'name' => $this->fiat->name,
                 'balance' => $this->balance,
                 'fiat_id' => $this->fiat_id,
-                'symbol' => $this->fiat->symbol,
-                'pending_transactions_count' => $this->pending_transactions_count
+                'symbol' => $this->fiat->symbol
             ],
             'id' => $this->id
         ];

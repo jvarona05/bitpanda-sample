@@ -7,6 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use App\Http\Resources\FiatWalletResource;
 use App\Repository\WalletRepository;
 use Tests\ApiTestCase;
+use App\FiatWallet;
 
 class FiatWalletTest extends ApiTestCase
 {
@@ -19,10 +20,26 @@ class FiatWalletTest extends ApiTestCase
 
         $fiatWaletResourceCollection = FiatWalletResource::collection($fiatWallets);
         
-        $this->getJson(route('api.fiat-wallets'))
+        $this->getJson(route('api.fiat_wallets'))
             ->assertStatus(200)
             ->assertJson([
                 'data' => $fiatWaletResourceCollection->jsonSerialize()
+            ]);
+    }
+
+    /**
+     * @test
+     */
+    public function a_user_can_get_a_single_fiat_wallet()
+    {        
+        $fiatWallet = FiatWallet::first();
+
+        $fiatWalletResource = new FiatWalletResource($fiatWallet);
+        
+        $this->getJson(route('api.fiat_wallet.show', ['id' => $fiatWallet->id]))
+            ->assertStatus(200)
+            ->assertJson([ 
+                'data' => $fiatWalletResource->jsonSerialize()
             ]);
     }
 }

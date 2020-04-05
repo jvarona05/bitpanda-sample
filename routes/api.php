@@ -15,13 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::get('wallets', 'WalletController@index')->name('api.wallets');
+    Route::get('wallets', 'WalletController@index')
+        ->name('api.wallets');
     
-    Route::get('wallets/{id}', 'WalletController@show')->name('api.wallet.show');
+    Route::get('wallets/{id}', 'WalletController@show')
+        ->name('api.wallet.show');
     
     Route::get('wallets/{id}/transactions', 'WalletController@transactions')
         ->name('api.wallet.transactions');
     
     Route::get('fiat-wallets', 'FiatWalletController@index')
-        ->name('api.fiat-wallets');
+        ->name('api.fiat_wallets');
+    
+    Route::get('fiat-wallets/{id}', 'FiatWalletController@show')
+        ->name('api.fiat_wallet.show');
 });
