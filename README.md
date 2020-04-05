@@ -24,7 +24,19 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 - Eloquent - Eager Loading
 - Eloquent - One To Many (Polymorphic) relation
 
-## Learning Laravel
+## Instalation
+
+### Clone the project
+
+```
+git clone https://github.com/jvarona05/bitpanda-sample.git
+```
+
+### Create .env file
+
+```
+cp .env.example .env
+```
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
