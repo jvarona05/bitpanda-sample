@@ -35,4 +35,7 @@ Route::prefix('v1')->group(function () {
 
     Route::get('paymentoptions', 'PaymentController@index')
         ->name('api.payment_options');
+    
+    Route::get('ohlc', 'StatsController@ohlc')
+        ->name('api.stats.ohlc');
 });
