@@ -5,34 +5,19 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\Utils\WalletUtils;
-use Tests\TestCase;
-use Laravel\Passport\Passport;
-use App\User;
+use Tests\ApiTestCase;
 
 
-class WalletTest extends TestCase
+class WalletTest extends ApiTestCase
 {
-    use RefreshDatabase;
-
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        $this->seed();
-
-        Passport::actingAs(
-            User::first()
-        );
-    }
-
     /**
      * A basic feature test example.
      *
      * @return void
      */
-    public function testExample()
+    public function testCanUserGetTheirWallets()
     {        
-        $this->getJson(route('api.wallet.index'))
+        $this->getJson(route('api.wallets'))
             ->assertStatus(200)
             ->assertJsonStructure(WalletUtils::$userWalletStructure);
     }
