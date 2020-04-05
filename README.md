@@ -30,6 +30,8 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 
 ```
 git clone https://github.com/jvarona05/bitpanda-sample.git
+
+cd bitpanda-sample
 ```
 
 ### Create .env file
@@ -41,6 +43,8 @@ cp .env.example .env
 ### Run Docker
 
 ```
+git clone https://github.com/Laradock/laradock.git
+
 cd laradock
 
 cp env-example .env
