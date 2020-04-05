@@ -49,7 +49,7 @@ cd laradock
 
 cp env-example .env
 
-docker-compose up -d nginx mysql phpmyadmin workspace 
+docker-compose up -d nginx mysql workspace 
 ```
 
 ### Configure the project
