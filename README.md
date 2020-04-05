@@ -24,7 +24,7 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 - Eloquent - Eager Loading
 - Eloquent - One To Many (Polymorphic) relation
 
-## Instalation
+## Installation
 
 ### Clone the project
 
