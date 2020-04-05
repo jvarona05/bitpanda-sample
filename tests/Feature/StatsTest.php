@@ -33,6 +33,15 @@ class StatsTest extends ApiTestCase
         $this->getOpenHighLowCloseData('year');
     }
 
+    /**
+     * @test
+     */
+    public function get_not_found_in_ohlc_endpoint_if_date_ange_is_not_correct()
+    {                
+        $this->getJson(route('api.stats.ohlc', ['dateRange' => 'not_correct']))
+            ->assertStatus(404);
+    }
+
     private function getOpenHighLowCloseData($dateRange)
     {
         return $this->getJson(route('api.stats.ohlc', ['dateRange' => $dateRange]))
