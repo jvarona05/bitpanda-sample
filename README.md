@@ -8,8 +8,6 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 
 [API Documentation](https://jvarona05.github.io/bitpanda-sample/public/docs/).
 
-https://theme.zdassets.com/theme_assets/624144/6a8455c16fd14684884098941e1317cc5173b353.png
-
 ## Main Technologies
 
 - Laravel
