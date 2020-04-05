@@ -86,3 +86,5 @@ http://localhost/
  ### Get token
 
 <p align="center"><img src="https://i.imgur.com/lW6faS9.png" width="600"></p>
+
+To Learn more about the authentication check [Laravel Passport documentation](https://laravel.com/docs/7.x/passport).
