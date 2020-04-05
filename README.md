@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="https://theme.zdassets.com/theme_assets/624144/6a8455c16fd14684884098941e1317cc5173b353.png" width="400"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -14,6 +14,8 @@ This is a RESTful API project developed with Laravel, Passport, Mysql and Docker
 This project was inspired by BitPanda. The main goal was to try simulating the basic functions and architecture of this interesting platform.
 
 [API Documentation](https://jvarona05.github.io/bitpanda-sample/public/docs/).
+
+https://theme.zdassets.com/theme_assets/624144/6a8455c16fd14684884098941e1317cc5173b353.png
 
 ## Main Technologies
 
