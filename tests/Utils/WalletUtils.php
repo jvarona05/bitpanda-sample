@@ -41,7 +41,6 @@ class WalletUtils
                             'name',
                             'balance',
                             'symbol',
-                            'pending_transactions_count',
                             'fiat_id'
                         ],
                         'id'

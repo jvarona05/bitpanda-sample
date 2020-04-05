@@ -41,7 +41,7 @@ class FiatWalletController extends Controller
      */
     public function transactions($id)
     {
-        $transactions = Wallet::find($id)->transactions;
+        $transactions = FiatWallet::find($id)->transactions;
 
         return WalletTransactionResource::collection($transactions);
     }

@@ -29,4 +29,7 @@ Route::prefix('v1')->group(function () {
     
     Route::get('fiat-wallets/{id}', 'FiatWalletController@show')
         ->name('api.fiat_wallet.show');
+    
+    Route::get('fiat-wallets/{id}/transactions', 'FiatWalletController@transactions')
+        ->name('api.fiat_wallet.transactions');
 });
