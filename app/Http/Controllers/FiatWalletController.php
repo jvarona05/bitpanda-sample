@@ -8,6 +8,9 @@ use App\Http\Resources\FiatWalletResource;
 use App\Repository\WalletRepository;
 use App\FiatWallet;
 
+/**
+ * @group Fiat Wallets
+ */
 class FiatWalletController extends Controller
 {
     /**

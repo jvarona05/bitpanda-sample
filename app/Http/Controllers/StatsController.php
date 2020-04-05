@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Resources\ohlcResource;
 use App\Repository\StatsRepository;
 
+/**
+ * @group Stats
+ */
 class StatsController extends Controller
 {
     /**
