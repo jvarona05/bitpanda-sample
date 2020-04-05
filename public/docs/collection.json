@@ -2,7 +2,7 @@
     "variables": [],
     "info": {
         "name": "Laravel API",
-        "_postman_id": "4a879611-377f-4eae-9dcb-056c194c08a9",
+        "_postman_id": "cfb563da-468b-486a-bc18-09657c4efd29",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -55,7 +55,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "provident",
+                                    "value": "eaque",
                                     "description": "The ID of the fiat wallet."
                                 }
                             ]
@@ -95,7 +95,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "veritatis",
+                                    "value": "minima",
                                     "description": "The ID of the wallet."
                                 }
                             ]
@@ -179,7 +179,7 @@
                                 {
                                     "id": "dateRange",
                                     "key": "dateRange",
-                                    "value": "pariatur",
+                                    "value": "eos",
                                     "description": "The value can be can be [day, month or day]."
                                 }
                             ]
@@ -257,7 +257,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quia",
+                                    "value": "et",
                                     "description": "The ID of the wallet."
                                 }
                             ]
@@ -297,7 +297,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "doloribus",
+                                    "value": "quos",
                                     "description": "The ID of the wallet."
                                 }
                             ]

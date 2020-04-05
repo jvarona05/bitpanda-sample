@@ -32,6 +32,10 @@ body {
     font-family: 'Sen', sans-serif !important;
 }
 
+.tocify-wrapper>.search input {
+    color: #292929!important;
+}
+
 
 /**
 .page-wrapper {

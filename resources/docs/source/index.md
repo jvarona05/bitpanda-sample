@@ -190,7 +190,6 @@ Parameter | Status | Description
     `id` |  required  | The ID of the fiat wallet.
 
 <!-- END_2ae2a7b779a7ecc201bb2fc8b982c504 -->
-
 <!-- START_cb3a25104ed5af1b296ce2f6684e37a1 -->
 ## Get fiat wallet transactions.
 
@@ -280,7 +279,6 @@ Parameter | Status | Description
     `id` |  required  | The ID of the wallet.
 
 <!-- END_cb3a25104ed5af1b296ce2f6684e37a1 -->
-
 #Payments
 
 
@@ -514,7 +512,6 @@ Parameter | Status | Description
     `dateRange` |  required  | The value can be can be [day, month or day].
 
 <!-- END_0b8950e04388ffc2b10b969f5ddb9046 -->
-
 #Wallets
 
 
@@ -738,7 +735,6 @@ Parameter | Status | Description
     `id` |  required  | The ID of the wallet.
 
 <!-- END_8847ee77bdcc2ce3ddc6a09efeacbd37 -->
-
 <!-- START_b3118bf8740e25e0f6d88f01c4f46c1b -->
 ## Get wallet transactions.
 
@@ -828,5 +824,4 @@ Parameter | Status | Description
     `id` |  required  | The ID of the wallet.
 
 <!-- END_b3118bf8740e25e0f6d88f01c4f46c1b -->
-
 
