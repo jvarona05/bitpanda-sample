@@ -13,9 +13,9 @@ class StatsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function ohlc()
+    public function ohlc($dateRange)
     {
-        $data = StatsRepository::getOhlcFilteredByRangeDate('day');
+        $data = StatsRepository::getOhlcFilteredByRangeDate($dateRange);
 
         return ohlcResource::collection($data);
     }
