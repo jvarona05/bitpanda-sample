@@ -26,7 +26,7 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 
 ## Database Schema
 
-<p align="center"><img src="https://i.imgur.com/Olhdq3X.png" width="700"></p>
+<p align="center"><img src="https://i.imgur.com/Olhdq3X.png" width="500"></p>
 
 ## Installation
 
