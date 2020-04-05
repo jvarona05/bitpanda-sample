@@ -75,7 +75,7 @@ Client secret: PBLVFz5Drgr7bgAnmLpSsW7VscEji56d3O08e9kv
 http://localhost/
 ```
  
- Then, generate the proyect key
+ Note: generate the proyect key
 
  ### Get token
 
