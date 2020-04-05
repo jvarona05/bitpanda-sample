@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use App\Http\Resources\WalletTransactionResource;
 use App\Http\Resources\WalletResource;
 use Tests\Utils\WalletUtils;
 use Tests\ApiTestCase;
@@ -35,6 +36,24 @@ class WalletTest extends ApiTestCase
             ->assertStatus(200)
             ->assertJson([ 
                 'data' => $walletResource->jsonSerialize()
+            ]);
+    }
+
+    /**
+     * @test
+     */
+    public function a_user_can_get_wallet_transactions()
+    {        
+        $wallet = Wallet::first();
+
+        $transactionCollectionResource = WalletTransactionResource::collection(
+            $wallet->transactions
+        );
+        
+        $this->getJson(route('api.wallet.transactions', ['id' => $wallet->id]))
+            ->assertStatus(200)
+            ->assertJson([
+                'data' => $transactionCollectionResource->jsonSerialize()
             ]);
     }
 }

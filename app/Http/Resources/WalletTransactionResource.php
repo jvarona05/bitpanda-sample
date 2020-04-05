@@ -19,7 +19,7 @@ class WalletTransactionResource extends JsonResource
             'attributes' => [
                 'action' => $this->action,
                 'amount' => $this->amount,
-                'date' => $this->created_at
+                'date' => $this->created_at->toString()
             ],
             'id' => $this->id
         ];
