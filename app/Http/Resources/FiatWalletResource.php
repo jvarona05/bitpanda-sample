@@ -17,7 +17,7 @@ class FiatWalletResource extends JsonResource
         return [
             'type' => 'fiat_wallet',
             'attributes' => [
-                'name' => $this->name,
+                'name' => $this->fiat->name,
                 'balance' => $this->balance,
                 'fiat_id' => $this->fiat_id,
                 'symbol' => $this->fiat->symbol,

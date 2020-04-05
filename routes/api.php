@@ -21,4 +21,7 @@ Route::prefix('v1')->group(function () {
     
     Route::get('wallets/{id}/transactions', 'WalletController@transactions')
         ->name('api.wallet.transactions');
+    
+    Route::get('fiat-wallets', 'FiatWalletController@index')
+        ->name('api.fiat-wallets');
 });

@@ -4,12 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\WalletTransactionResource;
-use App\Http\Resources\UserWalletResource;
-use App\Http\Resources\WalletResource;
+use App\Http\Resources\FiatWalletResource;
 use App\Repository\WalletRepository;
-use App\Wallet;
+use App\FiatWallet;
 
-class WalletController extends Controller
+class FiatWalletController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,13 +17,9 @@ class WalletController extends Controller
      */
     public function index()
     {
-        $user = auth()->user();
+        $fiatWallets = WalletRepository::getUserFiatWallets(auth()->user());
 
-        return new UserWalletResource([
-            'wallets' => WalletRepository::getUserCryptocoinWallets($user), 
-            'commodity_wallets' => WalletRepository::getUserMetalWallets($user),
-            'fiat_wallets' => WalletRepository::getUserFiatWallets($user)
-        ]);
+        return FiatWalletResource::collection($fiatWallets);
     }
 
     /**

@@ -14,14 +14,16 @@ abstract class ApiTestCase extends BaseTestCase
 {
     use CreatesApplication, RefreshDatabase;
 
+    public $user;
+
     public function setUp(): void
     {
         parent::setUp();
 
         $this->seed();
 
-        Passport::actingAs(
-            User::first()
-        );
+        $this->user = User::first();
+
+        Passport::actingAs($this->user);
     }
 }
