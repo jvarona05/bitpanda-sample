@@ -4,7 +4,7 @@
 
 This is a RESTful API project developed with Laravel, Passport, Mysql and Docker. This project went through all software development steps; analysis, design, development, testing and documentation.
 
-This project was inspired by BitPanda. The main goal was to try simulating the basic functions and architecture of this interesting platform.
+This project was inspired by BitPanda. The main goal was to try simulating the basic functionalities and architecture of this interesting platform.
 
 [API Documentation](https://jvarona05.github.io/bitpanda-sample/public/docs/).
 
