@@ -8,7 +8,8 @@ trait Wallets
 {
     public function initWalletsForAllUsers(string $walletType, array $wallets) : void
     {
-        if(!in_array($walletType, ['wallets', 'fiatWallets'])) throw new \Exception("Error: \"{$walletType}\" is not a correctly walletType");
+        if(!in_array($walletType, ['wallets', 'fiatWallets'])) 
+            throw new \Exception("Error: \"{$walletType}\" is not a correctly walletType");
 
         $users = User::all();
 
