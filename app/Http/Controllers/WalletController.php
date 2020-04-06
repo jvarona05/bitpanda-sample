@@ -47,7 +47,7 @@ class WalletController extends Controller
      */
     public function show($id)
     {
-        return new WalletResource(Wallet::find($id));
+        return new WalletResource(Wallet::findOrFail($id));
     }
 
     /**
@@ -63,7 +63,7 @@ class WalletController extends Controller
      */
     public function transactions($id)
     {
-        $transactions = Wallet::find($id)->transactions;
+        $transactions = Wallet::findOrFail($id)->transactions;
 
         return WalletTransactionResource::collection($transactions);
     }

@@ -42,7 +42,7 @@ class FiatWalletController extends Controller
      */
     public function show($id)
     {
-        return new FiatWalletResource(FiatWallet::find($id));
+        return new FiatWalletResource(FiatWallet::findOrFail($id));
     }
 
     /**
@@ -58,7 +58,7 @@ class FiatWalletController extends Controller
      */
     public function transactions($id)
     {
-        $transactions = FiatWallet::find($id)->transactions;
+        $transactions = FiatWallet::findOrFail($id)->transactions;
 
         return WalletTransactionResource::collection($transactions);
     }
