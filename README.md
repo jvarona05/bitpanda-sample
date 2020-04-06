@@ -84,7 +84,7 @@ http://localhost/
  
  Note: the app will ask you to generate the Laravel APP_KEY
 
- ### Get token
+ ## Get token
 
 To learn more about the authentication check [Laravel Passport documentation](https://laravel.com/docs/7.x/passport). Below there is an example of how to login.
 
