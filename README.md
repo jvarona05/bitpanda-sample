@@ -12,6 +12,7 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 
 - Laravel
 - Mysql
+- RESTful API
 - Docker - Laradock
 - Oauth2 - Passport
 - Migrations
