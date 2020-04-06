@@ -24,6 +24,8 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 - Eloquent - Resource
 - Eloquent - Eager Loading
 - Eloquent - One To Many (Polymorphic) relation
+- Laravel Apidoc Generator
+- Laravel Entity Relations Diagram Generator
 
 ## Database Schema
 
@@ -86,6 +88,6 @@ http://localhost/
 
  ## Get token
 
-To learn more about the authentication check [Laravel Passport documentation](https://laravel.com/docs/7.x/passport). Below there is an example of how to login.
+To learn more about the authentication check [Laravel Passport documentation](https://laravel.com/docs/7.x/passport). Below there is an example of how to get the access token.
 
 <p align="center"><img src="https://i.imgur.com/lW6faS9.png" width="600"></p>
