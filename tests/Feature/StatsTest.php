@@ -36,7 +36,7 @@ class StatsTest extends ApiTestCase
     /**
      * @test
      */
-    public function get_not_found_in_ohlc_endpoint_if_date_ange_is_not_correct()
+    public function get_not_found_in_ohlc_endpoint_if_date_range_is_not_correct()
     {                
         $this->getJson(route('api.stats.ohlc', ['dateRange' => 'not_correct']))
             ->assertStatus(404);
