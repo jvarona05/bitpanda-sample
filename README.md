@@ -25,6 +25,7 @@ This project was inspired by BitPanda. The main goal was to try simulating the b
 - Eloquent - Eager Loading
 - Eloquent - One To Many (Polymorphic) relation
 - Laravel Apidoc Generator
+- Laravel Entity Relations Diagram Generator
 
 ## Database Schema
 
