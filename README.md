@@ -81,7 +81,7 @@ Client secret: PBLVFz5Drgr7bgAnmLpSsW7VscEji56d3O08e9kv
 http://localhost/
 ```
  
- Note: the app will ask you to generate the APP_KEY
+ Note: the app will ask you to generate the Laravel APP_KEY
 
  ### Get token
 
